@@ -1,0 +1,35 @@
+{
+  "name": "testcafe-visual-regression",
+  "version": "0.0.1",
+  "description": "Visual Regression tooling designed to work with TestCafe.",
+  "author": "Ryan Casperson <casperson.ryan@gmail.com>",
+  "main": "./dist/visualRegression.js",
+  "types": "dist/visualRegression.d.ts",
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {
+    "fs-extra": "^8.0.1",
+    "path": "^0.12.7",
+    "pngjs": "^3.4.0",
+    "testcafe": "^1.2.1"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^7.0.0",
+    "@types/pngjs": "^3.3.2",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "@typescript-eslint/parser": "^1.6.0",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^4.1.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "eslint-plugin-testcafe": "^0.2.1",
+    "prettier": "^1.16.4",
+    "typescript": "^3.5.1"
+  },
+  "scripts": {
+    "build": "tsc",
+    "lint": "eslint . --ext .ts",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint"
+  }
+}
