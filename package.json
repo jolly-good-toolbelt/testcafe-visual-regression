@@ -1,6 +1,6 @@
 {
   "name": "testcafe-visual-regression",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Visual Regression tooling designed to work with TestCafe.",
   "author": "Ryan Casperson <casperson.ryan@gmail.com>",
   "main": "./dist/visualRegression.js",
